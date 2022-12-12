@@ -14,6 +14,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
+#steps to execute tasks
 steps:
 - task: NuGetToolInstaller@1
 
@@ -41,7 +42,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'DotNetApp'
+    ArtifactName: 'DotNetApplication'
     publishLocation: 'Container'
 
 
