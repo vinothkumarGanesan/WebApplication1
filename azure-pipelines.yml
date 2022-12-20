@@ -45,4 +45,4 @@ steps:
     ArtifactName: 'DotNetDemoApplication'
     publishLocation: 'Container'
 
-
+- script: echo $(Build.BuildNumber)
